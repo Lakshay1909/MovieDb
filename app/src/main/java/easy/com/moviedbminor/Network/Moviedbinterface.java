@@ -9,6 +9,7 @@ import easy.com.moviedbminor.Model.Movie.PopularMovie;
 import easy.com.moviedbminor.Model.Movie.Similar_Movies;
 import easy.com.moviedbminor.Model.Movie.TvcastofPerson;
 import easy.com.moviedbminor.Model.Movie.Videos;
+import easy.com.moviedbminor.Model.Search.SearchResponse;
 import easy.com.moviedbminor.Model.Tv.Images;
 import easy.com.moviedbminor.Model.Tv.Personimages;
 import easy.com.moviedbminor.Model.Tv.Seasondetails;
@@ -53,7 +54,8 @@ public interface Moviedbinterface {
     Call<Images> getmovieimages(@Path("movie_id") int id,@Query("api_key") String apikey);
     @GET("person/{person_id}/images")
     Call<Personimages> getpersonimages(@Path("person_id") int id, @Query("api_key") String apikey);
-
+     @GET("search/multi")
+     Call<SearchResponse> getsearchitems(@Query("api_key") String apikey, @Query("query") String query, @Query("page") int page);
     //TV
     @GET("tv/airing_today")
     Call<Tv> getairingtoday(@Query("api_key") String apikey, @Query("page") int page);

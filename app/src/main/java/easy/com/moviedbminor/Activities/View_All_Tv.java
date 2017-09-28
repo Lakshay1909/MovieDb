@@ -106,7 +106,7 @@ public class View_All_Tv extends AppCompatActivity {
         switch(movietype)
         {
             case IntentConstants.Popular_TvView:
-                Call<Tv> popularTvCall=moviedbinterface.getpopular("29213ce3aa2d1e8b18fb60d618ccec21",PageNumber++);
+                Call<Tv> popularTvCall=moviedbinterface.getpopular(IntentConstants.Api_Key,PageNumber++);
                 popularTvCall.enqueue(new Callback<Tv>() {
                     @Override
                     public void onResponse(Call<Tv> call, Response<Tv> response) {

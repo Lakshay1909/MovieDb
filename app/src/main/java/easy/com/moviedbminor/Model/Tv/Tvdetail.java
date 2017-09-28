@@ -1,5 +1,7 @@
 package easy.com.moviedbminor.Model.Tv;
 
+import java.util.ArrayList;
+
 /**
  * Created by Hp on 9/16/2017.
  */

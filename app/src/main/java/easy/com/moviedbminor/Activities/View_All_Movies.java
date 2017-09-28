@@ -116,7 +116,6 @@ public class View_All_Movies extends AppCompatActivity {
 
                         @Override
                         public void onFailure(Call<PopularMovie> call, Throwable t) {
-
                         }
                     });
                 break;

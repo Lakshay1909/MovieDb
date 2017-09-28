@@ -10,7 +10,7 @@ import android.view.WindowManager;
 import easy.com.moviedbminor.R;
 
 public class Splash_Activity extends AppCompatActivity {
-public static int time=5000;
+public static int time=4000;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
